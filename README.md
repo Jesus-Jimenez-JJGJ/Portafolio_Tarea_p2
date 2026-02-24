@@ -11,7 +11,7 @@ Instalar Virtualbox y Ubunthu
 ## Tarea -997 
 
 Adventures niveles gratuitos.
-![Tarea 997](Tareas/tarea_997.png)
+![Tarea 997](tarea_997.png)
 
 
 
@@ -19,8 +19,8 @@ Adventures niveles gratuitos.
 ## Tarea -996
 
 Practica de comandos.
-![Tarea 996](Tareas/tarea_996.png)
-![Tarea 996](Tareas/tarea_996.5.png)
+![Tarea 996](tarea_996.png)
+![Tarea 996](tarea_996.5.png)
 
 
 
@@ -96,3 +96,4 @@ Investigacion Unidad 1
 
 
 Bitacora de clases.
+
