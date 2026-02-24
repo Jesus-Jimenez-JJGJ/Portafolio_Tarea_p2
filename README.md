@@ -1,6 +1,5 @@
 # Portafolio de Tareas.
 
-
 ## Tarea -998
 
 Instalar Virtualbox y Ubunthu
@@ -29,7 +28,7 @@ Practica de comandos.
 ## Tarea -995
 
 Menu en Bash.
-[Tarea 995 - Ver video](videotarea_995.7z/video_tarea_995.mp4)
+[Tarea 995 - Ver video](https://asciinema.org/a/sxZVAffs8qCyALnD)
 
 
 
