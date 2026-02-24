@@ -3,7 +3,7 @@
 ## Tarea -998
 
 Instalar Virtualbox y Ubunthu
-![Tarea 998](Tareas/tarea_998.png)
+![Tarea 998](tarea_998.png)
 
 
 
@@ -93,5 +93,6 @@ Investigacion Unidad 1
 
 
 ## Tarea -990
+
 
 Bitacora de clases.
