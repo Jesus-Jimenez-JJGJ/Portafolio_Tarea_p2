@@ -28,7 +28,7 @@ Practica de comandos.
 ## Tarea -995
 
 Menu en Bash.
-[Tarea 995 - Ver video](video_tarea_995.mp4)
+[Tarea 995 - Ver video](viddeo_tarea_995.7z/video_tarea_995.mp4)
 
 
 
@@ -96,5 +96,6 @@ Investigacion Unidad 1
 
 
 Bitacora de clases.
+
 
 
