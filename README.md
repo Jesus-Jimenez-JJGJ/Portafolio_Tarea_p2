@@ -80,22 +80,7 @@ done
 ## Tarea -993
 
 Scrips de Bash (18).
-
-
-
-
-
-## Tarea -991
-
-Investigacion Unidad 1
-
-
-
-
-## Tarea -990
-
-
-Bitacora de clases.
+[[Tarea 993 - Ver video](https://asciinema.org/a/z7cK4pFiNkhNWLCe)]
 
 
 
