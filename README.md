@@ -408,7 +408,7 @@ echo "Others: $other_perm"
 [[Tarea 979 - ver video](https://asciinema.org/a/lwXxNVVSncrxlJBC)]
 
 ### Codigo Bash
-
+'''
  #!/bin/bash
 
  #CONFIGURACIÓN
@@ -653,3 +653,4 @@ echo "Others: $other_perm"
  else
     echo "Iiiiiiijole loco, ya perdiste. TE ALCANZO EL GUSANO (GAME OVER)"
  fi
+ '''
