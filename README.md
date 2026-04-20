@@ -5,7 +5,7 @@
 ## Tarea -998
 
 Instalar Virtualbox y Ubunthu
-![Tarea 998](tarea_998.png)
+![Tarea 998](1er_Parcial/tarea_998.png)
 
 
 
@@ -13,7 +13,7 @@ Instalar Virtualbox y Ubunthu
 ## Tarea -997 
 
 Adventures niveles gratuitos.
-![Tarea 997](tarea_997.png)
+![Tarea 997](1er_Parcial/tarea_997.png)
 
 
 
@@ -21,8 +21,8 @@ Adventures niveles gratuitos.
 ## Tarea -996
 
 Practica de comandos.
-![Tarea 996](tarea_996.png)
-![Tarea 996](tarea_996.5.png)
+![Tarea 996](1er_Parcial/tarea_996.png)
+![Tarea 996](1er_Parcial/tarea_996.5.png)
 
 
 
@@ -83,12 +83,12 @@ Scrips de Bash (18).
 
 ## Tarea -989
 ### Modulo TryHackMe Linux
-![Tarea 989](tryhackme_linux.png)
+![Tarea 989](2do_Parcial/tryhackme_linux.png)
 
 
 ## Tarea -988
 ### Modulo TryHackMe Windows
-![Tarea 988](tryhackme_windows.png)
+![Tarea 988](2do_Parcial/tryhackme_windows.png)
 
 
 ## Tarea -987
@@ -277,7 +277,7 @@ while True:
 ## Tarea -982
 ### Niveles de badit
 
-[Ver archivo de comandos](./Bandit_niveles.pdf)
+[Ver archivo de comandos](2do_Parcial/Bandit_niveles.pdf)
 
 
 
