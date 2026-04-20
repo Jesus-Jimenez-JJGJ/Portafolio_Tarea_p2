@@ -94,7 +94,7 @@ Scrips de Bash (18).
 ## Tarea -987
 ### Jail/Challenge
 ### Codigo Bash
-
+```
 #!/bin/bash
 
 
@@ -205,7 +205,7 @@ while true; do
     echo ""
 
 done
-
+```
 ### Grabacion Asciinema
 [[Tarea 987 - ver video](https://asciinema.org/a/ZRvvpWnJDNyK0qHe)] 
 
@@ -216,7 +216,7 @@ done
 ## Tarea -985
 ### Herramienta modulo OS python
 ### Codigo python
-
+```
 import os 
 def mostrar_menu():
     print("\n====HERRAMINETA DE MODULO OS ====")
@@ -270,7 +270,7 @@ while True:
 
     else:
         print("Opocion no valida")   
-
+```
 
 
 
@@ -284,7 +284,7 @@ while True:
 ## Tarea -981
 ### Menu en bash con los 18 scrips
 ### COdigo bash
-
+```
 #!/bin/bash
 
 while true do
@@ -337,7 +337,7 @@ x) echo "Saliendo"; break;;
 esac
 
 done
-
+```
 
 ## Tarea -980
 ### Scrip en bash de desglose un archivo
