@@ -1,0 +1,191 @@
+Level 0:
+● ssh bandit0@bandit.labs.overthewire.org -p 2220
+
+
+Level 0→1:
+● cat readme
+
+
+● Level 1→2:
+● cat ./-
+● cat < -
+
+
+Level 2→3:
+● cat "spaces in this filename"
+● cat spaces\ in\ this\ filename
+
+
+Level 3→4:
+● cd inhere
+● ls -la
+● cat .hidden
+
+
+Level 4→5:
+● file inhere/-file0*
+● cat inhere/-file07
+
+
+Level 5→6:
+● find inhere/ -type f -size 1033c ! -executable
+● cat inhere/maybehere07/.file2
+
+
+Level 6→7:
+● find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
+● cat /var/lib/dpkg/info/bandit7.password
+
+
+Level 7→8:
+● grep millionth data.txt
+
+
+Level 8→9:
+● sort data.txt | uniq -u
+
+
+Level 9→10:
+● strings data.txt | grep '=='
+
+
+Level 10→11:
+● base64 -d data.txt
+
+
+Level 11→12:
+● cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+
+
+Level 12→13:
+● mkdir /tmp/bandit12 && cp data.txt /tmp/bandit12 && cd /tmp/bandit12
+● xxd -r data.txt > data.bin
+● file data.bin
+● mv data.bin data.gz && gzip -d data.gz
+● file data
+● mv data data.bz2 && bzip2 -d data.bz2
+● mv data data.tar && tar xf data.tar
+● cat data8.bin
+
+
+Level 13→14:
+● ssh -i sshkey.private bandit14@localhost -p 2220
+● cat /etc/bandit_pass/bandit14
+
+
+Level 14→15:
+● echo 'CONTRASEÑA' | nc localhost 30000
+
+
+Level 15→16:
+● echo 'CONTRASEÑA' | openssl s_client -connect localhost:30001 -quiet
+
+
+Level 16→17:
+● nmap -p 31000-32000 localhost
+● echo 'CONTRASEÑA' | openssl s_client -connect localhost:31790 -quiet
+
+
+Level 17→18:
+● diff passwords.old passwords.new
+
+
+Level 18→19:
+● ssh bandit18@bandit.labs.overthewire.org -p 2220 'cat ~/readme'
+
+
+Level 19→20:
+● ls -la
+● ./bandit20-do cat /etc/bandit_pass/bandit20
+
+
+Level 20→21:
+● echo 'CONTRASEÑA' | nc -l -p 5555 &
+● ./suconnect 5555
+
+
+Level 21→22:
+● ls /etc/cron.d/
+● cat /etc/cron.d/cronjob_bandit22
+● cat /usr/bin/cronjob_bandit22.sh
+● cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+
+
+Level 22→23:
+● cat /etc/cron.d/cronjob_bandit23
+● cat /usr/bin/cronjob_bandit23.sh
+● echo I am user bandit23 | md5sum | cut -d ' ' -f 1
+● cat /tmp/<hash_resultante>
+
+
+Level 23→24:
+● mkdir /tmp/b24
+● cat > /tmp/b24/getpass.sh << 'EOF'
+● #!/bin/bash
+● cat /etc/bandit_pass/bandit24 > /tmp/b24/pass.txt
+● EOF
+● chmod 777 /tmp/b24 && chmod +x /tmp/b24/getpass.sh
+● cp /tmp/b24/getpass.sh /var/spool/bandit24/foo/
+● cat /tmp/b24/pass.txt
+
+
+Level 24→25:
+● for i in $(seq -w 0 9999); do echo 'CONTRASEÑA '$i; done | nc localhost
+30002 | grep -v Wrong
+
+
+Level 25→26:
+● ssh -i bandit26.sshkey bandit26@localhost -p 2220
+● v (dentro de more, abre vim)
+● :set shell=/bin/bash (en vim)
+● :shell (en vim)
+
+
+Level 26→27:
+● ./bandit27-do cat /etc/bandit_pass/bandit27
+
+
+Level 27→28:
+● mkdir /tmp/b27 && cd /tmp/b27
+● git clone ssh://bandit27-git@localhost:2220/home/bandit27-git/repo
+● cat repo/README
+
+
+Level 28→29:
+● mkdir /tmp/b28 && cd /tmp/b28
+● git clone ssh://bandit28-git@localhost:2220/home/bandit28-git/repo
+● cd repo && git log --oneline
+● git show HEAD~1
+
+
+Level 29→30:
+● mkdir /tmp/b29 && cd /tmp/b29
+● git clone ssh://bandit29-git@localhost:2220/home/bandit29-git/repo
+● cd repo && git branch -a
+● git checkout origin/dev
+● cat README.md
+
+
+Level 30→31:
+● mkdir /tmp/b30 && cd /tmp/b30
+● git clone ssh://bandit30-git@localhost:2220/home/bandit30-git/repo
+● cd repo && git tag
+● git show secret
+
+
+Level 31→32:
+● mkdir /tmp/b31 && cd /tmp/b31
+● git clone ssh://bandit31-git@localhost:2220/home/bandit31-git/repo
+● cd repo && echo 'May I come in?' > key.txt
+● git add -f key.txt
+● git commit -m 'add key'
+● git push
+
+
+Level 32→33:
+● $0
+● cat /etc/bandit_pass/bandit33
+
+
+Level 33→34:
+● cat README.txt
