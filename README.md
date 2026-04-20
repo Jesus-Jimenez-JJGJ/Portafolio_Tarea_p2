@@ -345,7 +345,7 @@ done
 [[Tarea 980 - ver video](https://asciinema.org/a/Be6jp1k6ssHMXDPz)]
 
 ### Codigo bash
-
+```
 #!/bin/bash
 
 
@@ -400,7 +400,7 @@ echo "PERMISOS:"
 echo "User ($usuario): $user_perm"
 echo "Group ($grupo): $group_perm"
 echo "Others: $other_perm"
-
+```
 
 ## Tarea -979
 ### Juego en Bash
