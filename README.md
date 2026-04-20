@@ -409,34 +409,34 @@ echo "Others: $other_perm"
 
 ### Codigo Bash
 
-#!/bin/bash
+ #!/bin/bash
 
-#CONFIGURACIÓN
-WIDTH=40
-HEIGHT=16
-PLAYER_ROW=$((HEIGHT-1))
-PLAYER_COL=$((WIDTH/2))
+ #CONFIGURACIÓN
+ WIDTH=40
+ HEIGHT=16
+ PLAYER_ROW=$((HEIGHT-1))
+ PLAYER_COL=$((WIDTH/2))
 
-WORM_ROW=1
-WORM_DIR=1
+ WORM_ROW=1
+ WORM_DIR=1
 
-declare -a WORM_COLS
-WORM_COLS=(2 3 4 5 6 7 8 9)
+ declare -a WORM_COLS
+ WORM_COLS=(2 3 4 5 6 7 8 9)
 
-#Múchas balas
-declare -a BULLET_ROWS
-declare -a BULLET_COLS
+ #Múchas balas
+ declare -a BULLET_ROWS
+ declare -a BULLET_COLS
 
-GAME_OVER=0
-WIN=0
+ GAME_OVER=0
+ WIN=0
 
-declare -a FOOD_ROWS
-declare -a FOOD_COLS
+ declare -a FOOD_ROWS
+ declare -a FOOD_COLS
 
-SPEED=0.12
+ SPEED=0.12
 
-#GENERAR food
-generate_food() {
+ #GENERAR food
+ generate_food() {
     FOOD_ROWS=()
     FOOD_COLS=()
     for ((i=0; i<8; i++)); do
@@ -445,26 +445,26 @@ generate_food() {
     done
 }
 
-generate_food
+ generate_food
 
-#capturar movimientos
+ #capturar movimientos
 
-stty -echo -icanon time 0 min 0
-trap "stty sane; tput cnorm; clear; exit" EXIT
-tput civis
-clear
+ stty -echo -icanon time 0 min 0
+ trap "stty sane; tput cnorm; clear; exit" EXIT
+ tput civis
+ clear
 
-#color
-GREEN='\033[1;32m'
-YELLOW='\033[1;33m'
-CYAN='\033[1;36m'
-WHITE='\033[1;37m'
-MAGENTA='\033[1;35m'
-RESET='\033[0m'
+ #color
+ GREEN='\033[1;32m'
+ YELLOW='\033[1;33m'
+ CYAN='\033[1;36m'
+ WHITE='\033[1;37m'
+ MAGENTA='\033[1;35m'
+ RESET='\033[0m'
 
 
-draw() {
-    tput cup 0 0
+ draw() {
+   tput cup 0 0
 
     printf "${WHITE}+"
     printf '%0.s-' $(seq 1 $WIDTH)
@@ -527,8 +527,8 @@ draw() {
     printf "${WHITE}  Segmentos: ${GREEN}%d${WHITE}  Balas: ${YELLOW}%d${WHITE}>
 }
 
-#movimientos gusano
-move_worm() {
+ #movimientos gusano
+ move_worm() {
     local hit_wall=0
 
     for wc in "${WORM_COLS[@]}"; do
@@ -571,8 +571,8 @@ move_worm() {
     fi
 }
 
-#MOVER BALAS
-move_bullets() {
+ #MOVER BALAS
+ move_bullets() {
     local new_rows=()
     local new_cols=()
 
@@ -589,8 +589,8 @@ move_bullets() {
     BULLET_COLS=("${new_cols[@]}")
 }
 
-#COLICIOM BALA - GUSANO 
-check_collision() {
+ #COLICIOM BALA - GUSANO 
+ check_collision() {
     local new_bullet_rows=()
     local new_bullet_cols=()
 
@@ -618,12 +618,12 @@ check_collision() {
     fi
 }
 
-#DIBUJO INICIAL
-clear
-draw
+ #DIBUJO INICIAL
+ clear
+ draw
 
-#GAME LOP
-while [[ $GAME_OVER -eq 0 ]]; do
+ #GAME LOP
+ while [[ $GAME_OVER -eq 0 ]]; do
 
     IFS= read -t "$SPEED" -r -n 1 key
 
@@ -643,13 +643,13 @@ while [[ $GAME_OVER -eq 0 ]]; do
     check_collision
     draw
 
-done
+ done
 
-
-tput cnorm
-clear
-if [[ $WIN -eq 1 ]]; then
+ #prueba
+ tput cnorm
+ clear
+ if [[ $WIN -eq 1 ]]; then
     echo "QUEEEEE capo, ganaste mataste al gusano. (WINNER)"
-else
+ else
     echo "Iiiiiiijole loco, ya perdiste. TE ALCANZO EL GUSANO (GAME OVER)"
-fi
+ fi
